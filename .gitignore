@@ -1,0 +1,33 @@
+# macOS and editor state
+.DS_Store
+.idea/
+.vscode/
+**/.claude/settings.local.json
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Node / Remotion dependencies and generated output
+node_modules/
+.remotion/
+out/
+dist/
+coverage/
+
+# Local standalone video project; published promo assets live in /assets instead.
+ali-qwen-audio-tts/video/
+
+# Large, reproducible maintenance artefacts
+ali-qwen-audio-tts/maintenance/samples/

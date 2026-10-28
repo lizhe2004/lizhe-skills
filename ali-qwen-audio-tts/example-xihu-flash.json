@@ -1,0 +1,27 @@
+{
+  "request": {
+    "model": "qwen-audio-3.0-tts-flash",
+    "input": {
+      "text": "你知道吗？西湖十景并不是十个景点的简单清单，而是一套把春花、夏荷、秋月、冬雪和人文故事串在一起的审美地图。接下来，用一分钟看懂其中最容易混淆的两处赏月胜景。",
+      "voice": "qwen-audio-3.0-tts-flash-longchexini",
+      "format": "mp3",
+      "sample_rate": 24000,
+      "instruction": "使用普通话，平实准确但有吸引力的短视频百科解说语气。开头设置轻微悬念，重点词自然强调，语速自然，不要加速，不要朗读提示词。"
+    }
+  },
+  "response": {
+    "output": {
+      "audio": {
+        "data": "",
+        "id": "audio_cc28f6ff-4bd8-9b3f-91f5-5143bf24689f",
+        "expires_at": 1792563146,
+        "url": "http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen-audio-3.0-tts-flash/20261020/1713509665013886/cc28f6ff-4bd8-9b3f-91f5-5143bf24689f.mp3?Expires=1792563146&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=90AMrgC1%2BXoB4SFqoa2mKtuRWUY%3D"
+      },
+      "finish_reason": "stop"
+    },
+    "usage": {
+      "characters": 148
+    },
+    "request_id": "cc28f6ff-4bd8-9b3f-91f5-5143bf24689f"
+  }
+}
