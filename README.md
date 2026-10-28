@@ -16,6 +16,31 @@
 | [`doubao-tts-skill`](./doubao-tts-skill/) | 通过火山引擎豆包 TTS 合成多语种音频、字幕和字级时间戳。 |
 | [`doubao-audio-generation`](./doubao-audio-generation/) | 通过火山引擎 Seed Audio 生成音效、配音和参考素材驱动的定制音频。 |
 
+## 安装
+
+使用 [`skills` CLI](https://github.com/vercel-labs/skills) 安装。需要 Node.js 22.20 或更高版本。
+
+先查看仓库中的可用 Skill：
+
+```bash
+npx skills add lizhe2004/lizhe-skills --list
+```
+
+不带额外参数时，CLI 会交互式选择 Skill 与目标 Agent，并安装到当前项目。添加 `-g` 可安装到用户级目录、在所有项目中使用：
+
+```bash
+npx skills add lizhe2004/lizhe-skills -g
+```
+
+也可以直接安装指定的 Skill：
+
+```bash
+npx skills add lizhe2004/lizhe-skills --skill ali-qwen-audio-tts -g -y
+npx skills add https://github.com/lizhe2004/lizhe-skills/tree/main/doubao-tts-skill -g
+```
+
+安装后，在 Codex 中输入 `$ali-qwen-audio-tts`、`$doubao-tts` 或 `$doubao-audio-generation` 即可显式调用；也可由任务描述自动匹配。
+
 ## 仓库约定
 
 - 每个 Skill 以 `SKILL.md` 为入口；脚本放在 `scripts/`，按需查阅的资料放在 `reference/` 或 `references/`。
